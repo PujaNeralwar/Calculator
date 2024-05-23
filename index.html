@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>TODO App</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <input type="text" id="display" readonly placeholder="0">
-            <div class="key">
-                <button class="btn" id="one" onclick="one()">1</button>
-                <button class="btn" id="two" onclick="two()">2</button>
-                <button class="btn" id="three" onclick="three()">3</button>
-                <button class="btn" id="four" onclick="four()">4</button>
-                <button class="btn" id="five" onclick="five()">5</button>
-                <button class="btn" id="six" onclick="six()">6</button>
-                <button class="btn" id="seven" onclick="seven()">7</button>
-                <button class="btn" id="eight" onclick="eight()">8</button>
-                <button class="btn" id="nine" onclick="nine()">9</button>
-                <button class="btn" id="zero" onclick="zero()">0</button>
-                <button class="btn1" id="clear">C</button>
-                <button class="btn1" id="equal" onclick="equal()">=</button>
-                <button class="btn1" id="addition" onclick="addition()">+</button>
-                <button class="btn1" id="subtract" onclick="subtract()">-</button>
-                <button class="btn1" id="multiply" onclick="multiply()">x</button>
-                <button class="btn1" id="divide" onclick="divide()">/</button>
+    <main>
+        <div class="todo">
+            <div class="addtodo shadow">
+                <input type="text" id="newTask"  placeholder="Task to bo done....">
+                <button id="addtaskbtn">ADD</button>
+            </div>
+            <div >
+                <ul id="taskList" class="todoList shadow"></ul>
             </div>
         </div>
-    </div>
+       
+        <div class="content">
+            <h1>TO DO LIST</h1>
+            <h2 class="shadow">HTML,CSS,& Javascript</h2>
+        </div>
+    </main>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
